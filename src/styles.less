@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+@import "app/shared/styles/_mixins.less";
+@import "app/shared/styles/_variables.less";
+
+html {
+  font-family: "Rubik", serif;
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 48px;
+  font-family: "Rubik", serif;
+  font-weight: 600;
+}
+
+h2 {
+  font-size: 32px;
+  font-family: "Rubik", serif;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: "Rubik", serif;
+  font-weight: 400;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  width: auto;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 10px 20px;
+  background: @main-brand-color;
+  border-radius: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+
+  &:hover {
+    background: #63ccc5;
+    transform: scale(1.2s);
+  }
+}
